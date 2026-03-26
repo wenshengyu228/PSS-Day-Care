@@ -3,20 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Golden Years Senior Center | Community & Care</title>
+    <title>Partners Senior Services | Community & Care</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="mobile-call-bar">
+        <a href="tel:2156668866" class="call-btn">
+            <span>📞</span> Call Us Directly: (215) 666-8866
+        </a>
+    </div>
 
     <nav>
-        <div class="logo">Golden Years</div>
-        <ul>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#activities">Activities</a></li>
-            <li><a href="#contact">Contact Us</a></li>
-        </ul>
-    </nav>
+    <div class="logo">Partners Senior Services</div>
+    <ul class="nav-links">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><button id="lang-toggle" class="lang-btn">中文</button></li>
+    </ul>
+</nav>
 
     <header class="hero">
         <div class="hero-content">
@@ -101,9 +106,17 @@
         <div class="contact-layout">
             <div class="info-pane">
                 <h3>Visit Us</h3>
-                <p><strong>Address:</strong> 456 Community Way, Your City</p>
-                <p><strong>Hours:</strong> Mon - Fri, 8:00 AM - 4:00 PM</p>
-                <p><strong>Phone:</strong> (555) 987-6543</p>
+                    <div class="address-group">
+                        <div class="address-label">
+                            <strong>Address:</strong>
+                        </div>
+                        <div class="address-value">
+                            <span class="street-line">7755 Frankford Ave,</span>
+                            <span class="city-line">Philadelphia, PA 19136</span>
+                        </div>
+                    </div>
+                <p><strong>Hours:</strong> Mon - Sun, 8:00 AM - 1:00 PM</p>
+                <p><strong>Phone:</strong> (215) 666-8866</p>
                 <p><em>Ask for the Program Director</em></p>
             </div>
             
@@ -126,8 +139,13 @@
     </section>
 
     <footer>
-        <p>&copy; 2026 Golden Years Senior Center. Designed for our community.</p>
-    </footer>
+    <div class="footer-content">
+        <p>&copy; 2026 Partners Senior Services. All Rights Reserved.</p>
+        <p class="privacy-note">
+            <strong>Privacy Commitment:</strong> We only use your information to contact you regarding our services and will never sell your data.
+        </p>
+    </div>
+</footer>
 
 </body>
 </html>

@@ -45,8 +45,27 @@ label { display: block; font-weight: bold; margin-top: 15px; }
 input, textarea { width: 100%; padding: 15px; margin-top: 5px; border: 2px solid #ccc; border-radius: 5px; font-size: 1.1rem; }
 .btn { display: inline-block; background: var(--accent); color: white; padding: 15px 35px; text-decoration: none; font-weight: bold; border-radius: 5px; border: none; font-size: 1.2rem; cursor: pointer; margin-top: 20px; }
 
-footer { background: var(--primary-dark); color: white; text-align: center; padding: 30px; margin-top: 50px; }
+footer {
+    background: var(--primary-dark);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 50px;
+}
 
+.footer-content {
+    max-width: 800px;
+    margin: auto;
+}
+
+.privacy-note {
+    font-size: 0.95rem; /* Slightly smaller than main text */
+    color: #bdc3c7;    /* Soft grey so it's not too harsh */
+    margin-top: 15px;
+    border-top: 1px solid #444;
+    padding-top: 15px;
+    line-height: 1.4;
+}
 @media (max-width: 768px) {
     .contact-layout { grid-template-columns: 1fr; }
     nav { flex-direction: column; text-align: center; }
@@ -85,4 +104,32 @@ footer { background: var(--primary-dark); color: white; text-align: center; padd
 
 .resource-card a:hover {
     color: var(--accent);
+}
+
+/* Hide the call bar by default (Desktop/Tablets) */
+.mobile-call-bar {
+    display: none;
+}
+
+/* Show the call bar only on Mobile Devices */
+@media (max-width: 768px) {
+    .mobile-call-bar {
+        display: block;
+        background: #27ae60; /* Same friendly green as your accent */
+        text-align: center;
+        padding: 15px 0;
+        position: sticky;
+        top: 80px; /* Sits right under the navigation bar */
+        z-index: 999;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+
+    .call-btn {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 1.2rem;
+        display: block;
+        width: 100%;
+    }
 }
