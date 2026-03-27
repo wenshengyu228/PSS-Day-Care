@@ -378,6 +378,9 @@ footer {
 
 @media (max-width: 768px) {
     .mobile-call-bar { display: block; position: sticky; top: 6rem; z-index: 1000; }
+    .main-nav { padding: 0.5rem 0.75rem; flex-wrap: wrap; }
+    .logo img { max-height: 50px; }
+    .logo { min-height: 50px; }
     .hero { min-height: 60vh; padding: 4rem 0.9rem; }
     .container { padding: 50px 1rem; }
 }
@@ -387,4 +390,7 @@ footer {
     .hero p { font-size: 1rem; }
     .nav-links a,
     .lang-btn { font-size: 0.9rem; }
+    .main-nav { gap: 0.5rem; }
+    .logo img { max-height: 45px; }
+    .logo { min-height: 45px; }
 }
