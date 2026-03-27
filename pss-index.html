@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Partners Senior Services provides seniors with quality day care, wellness support, nutritious meals, and community activities in Philadelphia.">
+    <title>Partners Senior Services | Community & Care</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700;900&family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="mobile-call-bar" aria-live="polite">
+        <a href="tel:2156668866" class="call-btn" aria-label="Call us directly">
+            <span>📞</span> (215) 666-8866
+        </a>
+    </div>
+
+    <nav class="main-nav" aria-label="Primary site navigation">
+        <div class="logo" data-i18n-key="logo">Partners Senior Services</div>
+        <button id="menu-toggle" class="menu-toggle" aria-expanded="false" aria-controls="nav-list">☰</button>
+        <ul class="nav-links" id="nav-list">
+            <li><a href="#about" data-i18n-key="nav.about">About</a></li>
+            <li><a href="#services" data-i18n-key="nav.services">Services</a></li>
+            <li><a href="#activities" data-i18n-key="nav.activities">Activities</a></li>
+            <li><a href="huada-transportation-index.html" data-i18n-key="nav.huada">Huada Transportation</a></li>
+            <li><a href="#contact" data-i18n-key="nav.contact">Contact</a></li>
+            <li><button id="lang-toggle" class="lang-btn" aria-label="Switch language" data-i18n-key="lang.toggle">中文</button></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <p class="eyebrow" data-i18n-key="hero.eyebrow">Trusted [Nonprofit] Community Partner</p>
+            <h1 data-i18n-key="hero.title">Active Living for Seniors</h1>
+            <p data-i18n-key="hero.text">A safe, inclusive day program for older adults focused on wellness, social connection, and independence.</p>
+            <div class="hero-actions">
+                <a href="#contact" class="btn" data-i18n-key="hero.cta1">Request a Tour</a>
+                <a href="#services" class="btn btn-secondary" data-i18n-key="hero.cta2">Explore Programs</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="about" class="container">
+            <h2 class="section-title" data-i18n-key="about.title">About Our Program</h2>
+            <p class="intro-text" data-i18n-key="about.text">Partners Senior Services has served Philadelphia seniors since 2010 with accredited care that balances independence, dignity, and community engagement. Our campus is licensed, insured, and staffed by experienced professionals.</p>
+            <div class="about-grid">
+                <article class="about-card">
+                    <h3 data-i18n-key="about.card1.heading">Mission</h3>
+                    <p data-i18n-key="about.card1.text">To support seniors by providing reliable, compassionate day services that promote physical and emotional well-being.</p>
+                </article>
+                <article class="about-card">
+                    <h3 data-i18n-key="about.card2.heading">Vision</h3>
+                    <p data-i18n-key="about.card2.text">A community where every older adult experiences connection, purpose, and access to essential health resources.</p>
+                </article>
+                <article class="about-card">
+                    <h3 data-i18n-key="about.card3.heading">Values</h3>
+                    <p data-i18n-key="about.card3.text">Respect, integrity, safety, and continuous improvement in service delivery.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="services" class="container bg-light">
+            <h2 class="section-title" data-i18n-key="services.title">Our Core Services</h2>
+            <div class="grid">
+                <div class="service-card">
+                    <img src="images/community.svg" alt="Community activities" style="width:100%; max-width:220px; margin-bottom:16px;" />
+                    <h3 data-i18n-key="services.card1.heading">Daily Meals</h3>
+                    <p data-i18n-key="services.card1.text">Chef-prepared breakfasts and lunches with options for therapeutic diets, diabetes, and heart health.</p>
+                </div>
+                <div class="service-card">
+                    <img src="images/wellness.svg" alt="Health and wellness" style="width:100%; max-width:220px; margin-bottom:16px;" />
+                    <h3 data-i18n-key="services.card2.heading">Health & Wellness</h3>
+                    <p data-i18n-key="services.card2.text">Nurse-led assessments, exercise sessions, health education, and medication review by licensed staff.</p>
+                </div>
+                <div class="service-card">
+                    <img src="images/shuttle.svg" alt="Transportation services" style="width:100%; max-width:220px; margin-bottom:16px;" />
+                    <h3 data-i18n-key="services.card3.heading">Transportation</h3>
+                    <p data-i18n-key="services.card3.text">Certified drivers provide safe pickup and drop-off within a 12-mile radius, included in membership.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="activities" class="container">
+            <h2 class="section-title" data-i18n-key="activities.title">Signature Activities</h2>
+            <div class="activity-row">
+                <div class="activity-item" data-i18n-key="activities.monday"><strong>Monday</strong> - Creative Arts & Cognitive Games</div>
+                <div class="activity-item" data-i18n-key="activities.wednesday"><strong>Wednesday</strong> - Group Fitness & Wellness Talks</div>
+                <div class="activity-item" data-i18n-key="activities.friday"><strong>Friday</strong> - Tech Help Desk & Family Connection Hour</div>
+            </div>
+        </section>
+
+        <section id="resources" class="container bg-light">
+            <h2 class="section-title" data-i18n-key="resources.title">Resources for Families</h2>
+            <p class="intro-text" data-i18n-key="resources.text">Reliable online resources and local partner organizations to support financial, medical, and legal needs.</p>
+            <div class="grid">
+                <div class="resource-card">
+                    <h4>Medicare & Health</h4>
+                    <ul>
+                        <li><a href="https://www.medicare.gov" target="_blank" rel="noopener">Official Medicare Site</a></li>
+                        <li><a href="#">Community Clinic Locator</a></li>
+                        <li><a href="#">Prescription Support</a></li>
+                    </ul>
+                </div>
+                <div class="resource-card">
+                    <h4>Social Security</h4>
+                    <ul>
+                        <li><a href="https://www.ssa.gov" target="_blank" rel="noopener">SSA Benefits</a></li>
+                        <li><a href="#">Retirement Planning</a></li>
+                        <li><a href="#">Local SSA Services</a></li>
+                    </ul>
+                </div>
+                <div class="resource-card">
+                    <h4>Legal & Financial</h4>
+                    <ul>
+                        <li><a href="#">Senior Legal Hub</a></li>
+                        <li><a href="#">Tax Assistance</a></li>
+                        <li><a href="#">Identity Theft Prevention</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="container">
+            <h2 class="section-title" data-i18n-key="contact.title">Get in Touch</h2>
+            <div class="contact-layout">
+                <div class="info-pane">
+                    <h3 data-i18n-key="contact.visit">Visit Our Center</h3>
+                    <address>
+                        7755 Frankford Ave<br>
+                        Philadelphia, PA 19136
+                    </address>
+                    <p><strong data-i18n-key="contact.hours.label">Hours:</strong> <span data-i18n-key="contact.hours">Mon - Sun, 8:00 AM - 5:00 PM</span></p>
+                    <p><strong data-i18n-key="contact.phone.label">Phone:</strong> <a href="tel:2156668866" data-i18n-key="contact.phone">(215) 666-8866</a></p>
+                    <p><strong data-i18n-key="contact.email.label">Email:</strong> <a href="mailto:info@partnersseniorservices.org" data-i18n-key="contact.email">info@partnersseniorservices.org</a></p>
+                </div>
+
+                <form action="https://formspree.io/f/xeepoovl" method="POST" class="contact-form" aria-label="Contact form">
+                    <label for="name" data-i18n-key="contact.form.name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email" data-i18n-key="contact.form.email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="phone" data-i18n-key="contact.form.phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required>
+
+                    <label for="message" data-i18n-key="contact.form.message">How can we help you?</label>
+                    <textarea id="message" name="message" rows="4"></textarea>
+
+                    <button type="submit" class="btn" data-i18n-key="contact.form.submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <section class="container bg-light">
+        <h2 class="section-title">Community Care in Action</h2>
+        <p class="intro-text">Our community is built on compassion and mutual support. These stories reflect the seniors we serve, and the kindness at the heart of every program.</p>
+        <div class="grid">
+            <div class="service-card" style="text-align:center;">
+                <img src="images/elderly-care-1.svg" alt="Senior friend group" style="max-width:180px;" loading="lazy" />
+                <p>Warm social connection and friendly faces.</p>
+            </div>
+            <div class="service-card" style="text-align:center;">
+                <img src="images/elderly-care-2.svg" alt="Senior support" style="max-width:180px;" loading="lazy" />
+                <p>Respectful care for health and mobility.</p>
+            </div>
+            <div class="service-card" style="text-align:center;">
+                <img src="images/elderly-care-3.svg" alt="Senior assistance and safety" style="max-width:180px;" loading="lazy" />
+                <p>Safe, compassionate transportation and community access.</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-content">
+            <p data-i18n-key="footer.copyright">&copy; 2026 Partners Senior Services. All Rights Reserved.</p>
+            <p class="privacy-note" data-i18n-key="footer.privacy"><strong>Privacy Commitment:</strong> We only use your data for service-related communication and never sell your information.</p>
+        </div>
+    </footer>
+
+    <script>
+        const translations = {
+            en: {
+                logo: 'Partners Senior Services',
+                'nav.about': 'About',
+                'nav.services': 'Services',
+                'nav.activities': 'Activities',
+                'nav.huada': 'Huada Transportation',
+                'nav.contact': 'Contact',
+                'lang.toggle': '中文',
+                'hero.eyebrow': 'Trusted [Nonprofit] Community Partner',
+                'hero.title': 'Active Living for Seniors',
+                'hero.text': 'A safe, inclusive day program for older adults focused on wellness, social connection, and independence.',
+                'hero.cta1': 'Request a Tour',
+                'hero.cta2': 'Explore Programs',
+                'about.title': 'About Our Program',
+                'about.text': 'Partners Senior Services has served Philadelphia seniors since 2010 with accredited care that balances independence, dignity, and community engagement. Our campus is licensed, insured, and staffed by experienced professionals.',
+                'about.card1.heading': 'Mission',
+                'about.card1.text': 'To support seniors by providing reliable, compassionate day services that promote physical and emotional well-being.',
+                'about.card2.heading': 'Vision',
+                'about.card2.text': 'A community where every older adult experiences connection, purpose, and access to essential health resources.',
+                'about.card3.heading': 'Values',
+                'about.card3.text': 'Respect, integrity, safety, and continuous improvement in service delivery.',
+                'services.title': 'Our Core Services',
+                'services.card1.heading': 'Daily Meals',
+                'services.card1.text': 'Chef-prepared breakfasts and lunches with options for therapeutic diets, diabetes, and heart health.',
+                'services.card2.heading': 'Health & Wellness',
+                'services.card2.text': 'Nurse-led assessments, exercise sessions, health education, and medication review by licensed staff.',
+                'services.card3.heading': 'Transportation',
+                'services.card3.text': 'Certified drivers provide safe pickup and drop-off within a 12-mile radius, included in membership.',
+                'activities.title': 'Signature Activities',
+                'activities.monday': 'Monday - Creative Arts & Cognitive Games',
+                'activities.wednesday': 'Wednesday - Group Fitness & Wellness Talks',
+                'activities.friday': 'Friday - Tech Help Desk & Family Connection Hour',
+                'resources.title': 'Resources for Families',
+                'resources.text': 'Reliable online resources and local partner organizations to support financial, medical, and legal needs.',
+                'contact.title': 'Get in Touch',
+                'contact.visit': 'Visit Our Center',
+                'contact.hours.label': 'Hours:',
+                'contact.hours': 'Mon - Sun, 8:00 AM - 5:00 PM',
+                'contact.phone.label': 'Phone:',
+                'contact.phone': '(215) 666-8866',
+                'contact.email.label': 'Email:',
+                'contact.email': 'info@partnersseniorservices.org',
+                'contact.form.name': 'Full Name',
+                'contact.form.email': 'Email Address',
+                'contact.form.phone': 'Phone Number',
+                'contact.form.message': 'How can we help you?',
+                'contact.form.submit': 'Send Message',
+                'footer.copyright': '© 2026 Partners Senior Services. All Rights Reserved.',
+                'footer.privacy': 'Privacy Commitment: We only use your data for service-related communication and never sell your information.'
+            },
+            zh: {
+                logo: '合作伙伴老年服务',
+                'nav.about': '关于',
+                'nav.services': '服务',
+                'nav.activities': '活动',
+                'nav.huada': '华达交通',
+                'nav.contact': '联系',
+                'lang.toggle': 'English',
+                'hero.eyebrow': '值得信赖的社区合作伙伴',
+                'hero.title': '老年人积极生活',
+                'hero.text': '为老年人提供安全、包容的日间项目，关注健康、社交和独立性。',
+                'hero.cta1': '预约参观',
+                'hero.cta2': '了解项目',
+                'about.title': '关于我们的项目',
+                'about.text': '合作伙伴老年服务自2010年起服务费城老年人，提供平衡独立、尊严和社区参与的认证护理。我们的园区有执照、投保，并由经验丰富的专业人员提供服务。',
+                'about.card1.heading': '使命',
+                'about.card1.text': '通过可靠、富有同情心的日间服务支持老年人，促进身心健康。',
+                'about.card2.heading': '愿景',
+                'about.card2.text': '为每位老年人营造一个体验联系、目标和获得基本健康资源的社区。',
+                'about.card3.heading': '价值',
+                'about.card3.text': '尊重、诚信、安全和服务持续改进。',
+                'services.title': '我们的核心服务',
+                'services.card1.heading': '每日膳食',
+                'services.card1.text': '主厨准备的早餐和午餐，提供治疗饮食、糖尿病和心脏健康支持。',
+                'services.card2.heading': '健康与保健',
+                'services.card2.text': '护士评估、锻炼课程、健康教育和持牌人员的药物审查。',
+                'services.card3.heading': '交通服务',
+                'services.card3.text': '认证司机提供 12 英里范围内安全接送，包含在会员资格中。',
+                'activities.title': '特色活动',
+                'activities.monday': '周一 - 创意艺术与认知游戏',
+                'activities.wednesday': '周三 - 团体健身与健康讲座',
+                'activities.friday': '周五 - 技术帮助站与家庭联络时段',
+                'resources.title': '家庭资源',
+                'resources.text': '可靠的在线资源和本地合作组织，支持财务、医疗和法律需求。',
+                'contact.title': '联系我们',
+                'contact.visit': '访问中心',
+                'contact.hours.label': '营业时间：',
+                'contact.hours': '周一至周日，上午8:00-下午5:00',
+                'contact.phone.label': '电话：',
+                'contact.phone': '(215) 666-8866',
+                'contact.email.label': '电子邮件：',
+                'contact.email': 'info@partnersseniorservices.org',
+                'contact.form.name': '姓名',
+                'contact.form.email': '电子邮箱',
+                'contact.form.phone': '电话号码',
+                'contact.form.message': '我们可以如何帮助您？',
+                'contact.form.submit': '发送信息',
+                'footer.copyright': '© 2026 合作伙伴老年服务。保留所有权利。',
+                'footer.privacy': '隐私承诺：我们仅将您的数据用于服务相关通信，绝不出售您的信息。'
+            }
+        };
+
+        const translatableItems = document.querySelectorAll('[data-i18n-key]');
+        const langToggle = document.getElementById('lang-toggle');
+
+        function setLanguage(lang) {
+            const data = translations[lang] || translations.en;
+            translatableItems.forEach((item) => {
+                const key = item.getAttribute('data-i18n-key');
+                if (!key) return;
+                const text = data[key];
+                if (text !== undefined) {
+                    if (item.tagName.toLowerCase() === 'input' || item.tagName.toLowerCase() === 'textarea') {
+                        item.placeholder = text;
+                    } else {
+                        item.textContent = text;
+                    }
+                }
+            });
+            langToggle.setAttribute('aria-label', lang === 'en' ? '切换到中文' : 'Switch to English');
+            localStorage.setItem('siteLanguage', lang);
+        }
+
+        const loadedLanguage = localStorage.getItem('siteLanguage') || 'en';
+        setLanguage(loadedLanguage);
+
+        langToggle.addEventListener('click', () => {
+            const currentLang = localStorage.getItem('siteLanguage') || 'en';
+            setLanguage(currentLang === 'en' ? 'zh' : 'en');
+        });
+
+        document.getElementById('menu-toggle').addEventListener('click', function () {
+            const nav = document.getElementById('nav-list');
+            const expanded = this.getAttribute('aria-expanded') === 'true';
+            this.setAttribute('aria-expanded', expanded ? 'false' : 'true');
+            nav.classList.toggle('open');
+        });
+    </script>
+</body>
+</html>

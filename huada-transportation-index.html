@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Huada Transportation partners with Partners Senior Services to provide safe, accessible senior shuttle services in Philadelphia.">
+    <title>Huada Transportation | Partners Senior Services</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="main-nav" aria-label="Primary site navigation">
+        <div class="logo" data-i18n-key="logo">Huada Transportation</div>
+        <button id="menu-toggle" class="menu-toggle" aria-expanded="false" aria-controls="nav-list">☰</button>
+        <ul class="nav-links" id="nav-list">
+            <li><a href="pss-index.html" data-i18n-key="nav.home">Partners Senior Services</a></li>
+            <li><a href="#overview" data-i18n-key="nav.overview">Overview</a></li>
+            <li><a href="#services" data-i18n-key="nav.services">Services</a></li>
+            <li><a href="#quality" data-i18n-key="nav.quality">Safety & Quality</a></li>
+            <li><a href="#contact" data-i18n-key="nav.contact">Contact</a></li>
+            <li><a class="btn btn-secondary" href="pss-index.html" style="padding:0.5rem 0.75rem; font-size:0.9rem;">Back to Partners Center</a></li>
+            <li><button id="lang-toggle" class="lang-btn" aria-label="Switch language" data-i18n-key="lang.toggle">中文</button></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 data-i18n-key="hero.title">Huada Transportation</h1>
+            <p data-i18n-key="hero.text">Reliable shuttle solutions for Partners Senior Services members and their families.</p>
+            <a href="#contact" class="btn" data-i18n-key="hero.cta">Request Transportation</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="overview" class="container">
+            <h2 class="section-title" data-i18n-key="overview.title">Partnership Overview</h2>
+            <p class="intro-text" data-i18n-key="overview.text">Huada Transportation has been a trusted partner of Partners Senior Services since 2024, delivering safe, on-time transportation for senior members to our community center, medical appointments, and wellness activities throughout Philadelphia.</p>
+            <div class="grid">
+                <div class="service-card">
+                    <img src="images/shuttle.svg" alt="Shuttle transport" style="width:100%; max-width:220px; margin-bottom:16px;"/>
+                    <h3 data-i18n-key="overview.card1.heading">Community Mobility</h3>
+                    <p data-i18n-key="overview.card1.text">Door-to-door pickup and drop-off for day-center participants within a 12-mile service radius.</p>
+                </div>
+                <div class="service-card">
+                    <img src="images/wellness.svg" alt="Health services" style="width:100%; max-width:220px; margin-bottom:16px;"/>
+                    <h3 data-i18n-key="overview.card2.heading">Medical Appointments</h3>
+                    <p data-i18n-key="overview.card2.text">Coordinated rides to routine health visits, specialist follow-ups, and pharmacy pickups.</p>
+                </div>
+                <div class="service-card">
+                    <img src="images/community.svg" alt="Community events" style="width:100%; max-width:220px; margin-bottom:16px;"/>
+                    <h3 data-i18n-key="overview.card3.heading">Family Visits</h3>
+                    <p data-i18n-key="overview.card3.text">Flexible shuttle options for family events, holidays, and community gatherings.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="container bg-light">
+            <h2 class="section-title" data-i18n-key="services.title">Senior-Focused Services</h2>
+            <ul class="resource-card" style="list-style:none; padding:0;">
+                <li data-i18n-key="services.item1"><strong>Accessible Vehicles:</strong> wheelchair lifts, low-floor access, and secure seating.</li>
+                <li data-i18n-key="services.item2"><strong>Trained Drivers:</strong> professional staff certified in senior transport and passenger assistance.</li>
+                <li data-i18n-key="services.item3"><strong>Real-Time Tracking:</strong> GPS dispatch and customer updates for safety and punctuality.</li>
+                <li data-i18n-key="services.item4"><strong>Flexible Scheduling:</strong> advance bookings, weekly routes, and same-day reservation windows.</li>
+            </ul>
+        </section>
+
+        <section id="quality" class="container">
+            <h2 class="section-title" data-i18n-key="quality.title">Safety & Quality</h2>
+            <div class="activity-row">
+                <div class="activity-item" data-i18n-key="quality.item1"><strong>Vehicle Maintenance</strong> – daily inspections and certified service checks.</div>
+                <div class="activity-item" data-i18n-key="quality.item2"><strong>Driver Screening</strong> – background checks, defensive driving, and sensitivity training.</div>
+                <div class="activity-item" data-i18n-key="quality.item3"><strong>Customer Care</strong> – dedicated coordinator for Partners Senior Services transportation requests.</div>
+            </div>
+        </section>
+
+        <section id="contact" class="container bg-light">
+            <h2 class="section-title" data-i18n-key="contact.title">Contact Huada Transportation</h2>
+            <div class="contact-layout">
+                <div class="info-pane">
+                    <h3 data-i18n-key="contact.reach">Reach Us</h3>
+                    <p><strong data-i18n-key="contact.phone.label">Phone:</strong> <a href="tel:2156668899" data-i18n-key="contact.phone">(215) 666-8899</a></p>
+                    <p><strong data-i18n-key="contact.email.label">Email:</strong> <a href="mailto:support@huadatransport.com" data-i18n-key="contact.email">support@huadatransport.com</a></p>
+                    <p><strong data-i18n-key="contact.office.label">Office:</strong> <span data-i18n-key="contact.office">7755 Frankford Ave, Philadelphia, PA 19136</span></p>
+                </div>
+                <form action="https://formspree.io/f/xeepoovl" method="POST" class="contact-form" aria-label="Transportation request form">
+                    <label for="riderName" data-i18n-key="contact.form.riderName">Rider Name</label>
+                    <input type="text" id="riderName" name="riderName" required>
+                    <label for="riderPhone" data-i18n-key="contact.form.phone">Phone</label>
+                    <input type="tel" id="riderPhone" name="riderPhone" required>
+                    <label for="riderEmail" data-i18n-key="contact.form.email">Email</label>
+                    <input type="email" id="riderEmail" name="riderEmail" required>
+                    <label for="pickupDate" data-i18n-key="contact.form.pickupDate">Preferred Pickup Date</label>
+                    <input type="date" id="pickupDate" name="pickupDate" required>
+                    <label for="comments" data-i18n-key="contact.form.comments">Additional Notes</label>
+                    <textarea id="comments" name="comments" rows="4"></textarea>
+                    <button type="submit" class="btn" data-i18n-key="contact.form.submit">Submit Request</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <section class="container bg-light">
+        <h2 class="section-title">Community Care in Action</h2>
+        <p class="intro-text">Our partnership is about people: creating caring rides and social opportunities for seniors and their families.</p>
+        <div class="grid">
+            <div class="service-card" style="text-align:center;">
+                <img src="images/elderly-care-1.svg" alt="Senior friend group" style="max-width:180px;" loading="lazy" />
+                <p>Friendly transportation with dignity.</p>
+            </div>
+            <div class="service-card" style="text-align:center;">
+                <img src="images/elderly-care-2.svg" alt="Senior support" style="max-width:180px;" loading="lazy" />
+                <p>Accessible, kind driver partnerships.</p>
+            </div>
+            <div class="service-card" style="text-align:center;">
+                <img src="images/elderly-care-3.svg" alt="Senior assistance and safety" style="max-width:180px;" loading="lazy" />
+                <p>Community care through each ride.</p>
+            </div>
+        </div>
+    </section>
+    <section class="container" style="text-align:center; padding: 30px 0;">
+        <a href="pss-index.html" class="btn btn-secondary">Back to Partners Senior Services</a>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p data-i18n-key="footer.copyright">&copy; 2026 Huada Transportation & Partners Senior Services. All rights reserved.</p>
+            <p class="privacy-note" data-i18n-key="footer.privacy">Together, we are dedicated to safe, respectful, and dependable travel for senior community members.</p>
+        </div>
+    </footer>
+
+    <script>
+        const translations = {
+            en: {
+                logo: 'Huada Transportation',
+                'nav.home': 'Home',
+                'nav.overview': 'Overview',
+                'nav.services': 'Services',
+                'nav.quality': 'Safety & Quality',
+                'nav.contact': 'Contact',
+                'lang.toggle': '中文',
+                'hero.title': 'Huada Transportation',
+                'hero.text': 'Reliable shuttle solutions for Partners Senior Services members and their families.',
+                'hero.cta': 'Request Transportation',
+                'overview.title': 'Partnership Overview',
+                'overview.text': 'Huada Transportation has been a trusted partner of Partners Senior Services since 2024, delivering safe, on-time transportation for senior members to our community center, medical appointments, and wellness activities throughout Philadelphia.',
+                'overview.card1.heading': 'Community Mobility',
+                'overview.card1.text': 'Door-to-door pickup and drop-off for day-center participants within a 12-mile service radius.',
+                'overview.card2.heading': 'Medical Appointments',
+                'overview.card2.text': 'Coordinated rides to routine health visits, specialist follow-ups, and pharmacy pickups.',
+                'overview.card3.heading': 'Family Visits',
+                'overview.card3.text': 'Flexible shuttle options for family events, holidays, and community gatherings.',
+                'services.title': 'Senior-Focused Services',
+                'services.item1': 'Accessible Vehicles: wheelchair lifts, low-floor access, and secure seating.',
+                'services.item2': 'Trained Drivers: professional staff certified in senior transport and passenger assistance.',
+                'services.item3': 'Real-Time Tracking: GPS dispatch and customer updates for safety and punctuality.',
+                'services.item4': 'Flexible Scheduling: advance bookings, weekly routes, and same-day reservation windows.',
+                'quality.title': 'Safety & Quality',
+                'quality.item1': 'Vehicle Maintenance – daily inspections and certified service checks.',
+                'quality.item2': 'Driver Screening – background checks, defensive driving, and sensitivity training.',
+                'quality.item3': 'Customer Care – dedicated coordinator for Partners Senior Services transportation requests.',
+                'contact.title': 'Contact Huada Transportation',
+                'contact.reach': 'Reach Us',
+                'contact.phone.label': 'Phone:',
+                'contact.phone': '(215) 666-8899',
+                'contact.email.label': 'Email:',
+                'contact.email': 'support@huadatransport.com',
+                'contact.office.label': 'Office:',
+                'contact.office': '7755 Frankford Ave, Philadelphia, PA 19136',
+                'contact.form.riderName': 'Rider Name',
+                'contact.form.phone': 'Phone',
+                'contact.form.email': 'Email',
+                'contact.form.pickupDate': 'Preferred Pickup Date',
+                'contact.form.comments': 'Additional Notes',
+                'contact.form.submit': 'Submit Request',
+                'footer.copyright': '© 2026 Huada Transportation & Partners Senior Services. All rights reserved.',
+                'footer.privacy': 'Together, we are dedicated to safe, respectful, and dependable travel for senior community members.'
+            },
+            zh: {
+                logo: '华大专车',
+                'nav.home': '首页',
+                'nav.overview': '概述',
+                'nav.services': '服务',
+                'nav.quality': '安全与质量',
+                'nav.contact': '联系',
+                'lang.toggle': 'English',
+                'hero.title': '华大专车',
+                'hero.text': '为合作伙伴老年服务会员及其家庭提供可靠的班车解决方案。',
+                'hero.cta': '申请运输服务',
+                'overview.title': '合作概述',
+                'overview.text': '自2024年起，华达交通成为合作伙伴老年服务的可信赖合作伙伴，为老年会员提供安全、准时的社区中心、医疗预约及健康活动运输。',
+                'overview.card1.heading': '社区出行',
+                'overview.card1.text': '提供 12 英里范围内日间中心参与者的门到门接送服务。',
+                'overview.card2.heading': '医疗预约',
+                'overview.card2.text': '协调常规健康访问、专家随访和药房取药的出行。',
+                'overview.card3.heading': '家庭访问',
+                'overview.card3.text': '灵活的节日、家庭活动和社区聚会班车选择。',
+                'services.title': '老年人专项服务',
+                'services.item1': '无障碍车辆：配备轮椅升降、低地板和安全座椅。',
+                'services.item2': '司机培训：专业人员具备老年运输和乘客协助认证。',
+                'services.item3': '实时跟踪：GPS 调度和客户更新，保障安全和准时。',
+                'services.item4': '灵活调度：提前预订、每周路线和当日预约窗口。',
+                'quality.title': '安全与质量',
+                'quality.item1': '车辆维护 – 每日检查和认证服务检查。',
+                'quality.item2': '司机筛选 – 背景审查、防御性驾驶和敏感性培训。',
+                'quality.item3': '客户关怀 – 专属协调员负责合作伙伴老年服务的运输需求。',
+                'contact.title': '联系华达交通',
+                'contact.reach': '联系我们',
+                'contact.phone.label': '电话：',
+                'contact.phone': '(215) 666-8899',
+                'contact.email.label': '电子邮件：',
+                'contact.email': 'support@huadatransport.com',
+                'contact.office.label': '办公室：',
+                'contact.office': '7755 Frankford Ave, Philadelphia, PA 19136',
+                'contact.form.riderName': '乘客姓名',
+                'contact.form.phone': '电话',
+                'contact.form.email': '电子邮件',
+                'contact.form.pickupDate': '首选接送日期',
+                'contact.form.comments': '其他备注',
+                'contact.form.submit': '提交请求',
+                'footer.copyright': '© 2026 华达交通与合作伙伴老年服务。保留所有权利。',
+                'footer.privacy': '我们致力于为老年社区成员提供安全、尊重且可靠的出行服务。'
+            }
+        };
+
+        const translatableItems = document.querySelectorAll('[data-i18n-key]');
+        const langToggle = document.getElementById('lang-toggle');
+
+        function setLanguage(lang) {
+            const data = translations[lang] || translations.en;
+            translatableItems.forEach(item => {
+                const key = item.dataset.i18nKey;
+                if (!key) return;
+                const text = data[key];
+                if (text === undefined) return;
+                if (item.tagName.toLowerCase() === 'input' || item.tagName.toLowerCase() === 'textarea') {
+                    item.placeholder = text;
+                } else {
+                    item.textContent = text;
+                }
+            });
+            langToggle.setAttribute('aria-label', lang === 'en' ? '切换到中文' : 'Switch to English');
+            localStorage.setItem('siteLanguage', lang);
+        }
+
+        const loadedLanguage = localStorage.getItem('siteLanguage') || 'en';
+        setLanguage(loadedLanguage);
+
+        langToggle.addEventListener('click', () => {
+            const currentLang = localStorage.getItem('siteLanguage') || 'en';
+            setLanguage(currentLang === 'en' ? 'zh' : 'en');
+        });
+
+        document.getElementById('menu-toggle').addEventListener('click', function () {
+            const nav = document.getElementById('nav-list');
+            const expanded = this.getAttribute('aria-expanded') === 'true';
+            this.setAttribute('aria-expanded', expanded ? 'false' : 'true');
+            nav.classList.toggle('open');
+        });
+    </script>
+</body>
+</html>
